@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 39276913}
   - component: {fileID: 39276912}
   - component: {fileID: 39276916}
+  - component: {fileID: 39276917}
   m_Layer: 0
   m_Name: ObjectA
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e68cf0f625204b48885cd63eb42bca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModelType: 0
+  ModelType: 1
   scale: 0.3
 --- !u!33 &39276913
 MeshFilter:
@@ -241,6 +242,20 @@ MonoBehaviour:
   gamma: 1
   delta: 1.5707964
   speed: 1
+--- !u!114 &39276917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39276911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed15f35bb517ec4f907059f6bae4b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  omega: 100
+  target: {fileID: 67892341}
 --- !u!1 &57477653
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e68cf0f625204b48885cd63eb42bca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModelType: 1
+  ModelType: 0
   scale: 0.3
 --- !u!114 &67892343
 MonoBehaviour:
