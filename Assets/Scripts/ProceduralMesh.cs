@@ -5,6 +5,7 @@ public abstract class ProceduralMesh
     public enum ProceduralType
     {
         Icosahedron,
+        Cone,
     }
 
     public abstract ProceduralType type { get; }
